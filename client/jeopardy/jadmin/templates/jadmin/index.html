@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Jeopardy Admin</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'jadmin/admin.css' %}">
+</head>
+
+<body>
+  <div id="masterContainer">
+    <div class="container">
+      <h1 style="text-align: center;">Jeopardy Admin</h1>
+
+      <button id="unlock" type="button">Unlock</button>
+      <button id="reset" type="button">Reset</button>
+      <button id="enterWage" type="button">Final Wages</button>
+      <button id="enterFinalJeopardy" type="button">Final Answers</button>
+
+      <h2>Team 1: <span id="teamonename">None</span><br> Score: $<span id="teamonescore">0</span></h2><input
+        type="number" placeholder="Score" id="teamone"><button id="teamonebutton">Update</button>
+      <h2>Team 2: <span id="teamtwoname">None</span><br> Score: $<span id="teamtwoscore">0</span></h2><input
+        type="number" placeholder="Score" id="teamtwo"><button id="teamtwobutton">Update</button>
+      <h2>Team 3: <span id="teamthreename">None</span><br> Score: $<span id="teamthreescore">0</span></h2><input
+        type="number" placeholder="Score" id="teamthree"><button id="teamthreebutton">Update</button>
+    </div>
+
+    <div class="container">
+      <h1>Activity Log</h1>
+      <ul id="messages"></ul>
+    </div>
+  </div>
+
+  <!-- - Jeopardy: import form, actually calls import spreadsheet w/ button + enter in SPREADSHEET_ID; Jeopardy remote controlled admin screen, choose active question instead of mouse -->
+
+
+  <script src="http://192.168.1.11:8888/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="{% static 'jadmin/admin.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+/* Page */
+body {
+    background-color: black;
+    display: inline-flex;
+    width: 100%;
+    height: 45rem;
+    text-align: center;
+    margin: 0; 
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* Containers */
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.category {
+    background-color: #060CE9;
+    color: whitesmoke;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    height: 20%;
+}

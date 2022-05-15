@@ -1,0 +1,45 @@
+{% load static %}
+{% load fix_quote %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Double Jeopardy</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'answers/answers.css' %}">
+</head>
+
+<body>
+    <div id="answer" onclick="home()">
+        <h1>If you're still seeing this, the question didn't load!</h1>
+    </div>
+
+    <div id="imageanswer" onclick="home()">
+        <h1>If you're still seeing this, the question didn't load!</h1>
+        <img src="" class="image">
+    </div>
+
+    <div id="dailydouble" onclick="clearDailyDouble()"></div>
+
+    {% for category in categories %}
+    <div class="column">
+        <div class="category">
+            <h1>{{ category.name }}</h1>
+        </div>
+
+        {% for answer in answers %}
+            {% if answer.category.name == category.name %}
+                {% if answer.url %}
+                    <div class="value" onclick="imageAnswer('{{ answer.text|fix_quote }}', (this), '{{ answer.url|fix_quote }}')">
+                {% else %}
+                    <div class="value" onclick="answer('{{ answer.text|fix_quote}}', (this))">
+                {% endif %}
+                    <h1>${{ answer.value }}</h1>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    {% endfor %}
+    <script src="{% static 'answers/answers.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,433 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Jeopardy Statistics</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'jstatistics/jstatistics.css' %}">
+</head>
+
+<body>
+  <div class="header">
+    <h1>Jeopardy Statistics</h1>
+  </div>
+
+  <div class="container" style="padding: 0 5%;">
+    <div class="verticalContainer">
+      <div class="containerHeader">
+        <h1>Consecutive Games Won</h1>
+      </div>
+
+      <div class="content" style="border-bottom: 2px solid gainsboro;">
+        <h1>User</h1>
+        <img src="../../static/jstatistics/user.jpeg" class="picture" />
+        <h1>1 Game | 2020</h1>
+      </div>
+
+      <div class="content" style="border-bottom: 2px solid gainsboro;">
+        <h1>User2</h1>
+        <img src="../../static/jstatistics/user2.jpeg" class="pictureSmall" />
+        <h1>1 Game | 2020</h1>
+      </div>
+
+      <div class="content">
+        <h1>User3</h1>
+        <img src="../../static/jstatistics/user3.jpeg" class="pictureSmall" />
+        <h1>1 Game | 2020</h1>
+      </div>
+    </div>
+
+    <div class="verticalContainer" style="margin-left: 1%;">
+      <div class="containerHeader">
+        <h1>All-Time Winnings</h1>
+      </div>
+
+      <div class="content" style="border-bottom: 2px solid gainsboro;">
+        <h1>User1</h1>
+        <img src="../../static/jstatistics/user.jpeg" class="picture" />
+        <h1>$75,000</h1>
+      </div>
+
+      <div class="content" style="border-bottom: 2px solid gainsboro;">
+        <h1>User2</h1>
+        <img src="../../static/jstatistics/user2.jpeg" class="pictureSmall" />
+        <h1>$75,000</h1>
+      </div>
+
+      <div class="content">
+        <h1>User3</h1>
+        <img src="../../static/jstatistics/user3.jpeg" class="pictureSmall" />
+        <h1>$75,000</h1>
+      </div>
+    </div>
+
+    <div class="verticalContainer" style="margin-left: 1%;">
+      <div class="containerHeader">
+        <h1>Single-Game Winnings</h1>
+      </div>
+
+      <div class="content" style="border-bottom: 2px solid gainsboro;">
+        <h1>User</h1>
+        <img src="../../static/jstatistics/user.jpg" style="align-content: right; justify-content: right;"
+          class="picture" />
+        <h1>$55,000 | 7/15/20</h1>
+      </div>
+
+      <div class="content" style="border-bottom: 2px solid gainsboro;">
+        <h1>User2</h1>
+        <img src="../../static/jstatistics/user2.jpg" style="align-content: right; justify-content: right;"
+          class="pictureSmall" />
+        <h1>$55,000 | 7/15/20</h1>
+      </div>
+
+      <div class="content">
+        <h1>User3</h1>
+        <img src="../../static/jstatistics/user3.jpg" style="align-content: right; justify-content: right;"
+          class="pictureSmall" />
+        <h1>$55,000 | 7/15/20</h1>
+      </div>
+    </div>
+
+    <div class="verticalContainer" style="margin-left: 1%;">
+      <div class="containerHeader">
+        <h1>Most Appearances</h1>
+      </div>
+
+      <div class="content" style="border-bottom: 2px solid gainsboro;">
+        <h1>User</h1>
+        <img src="../../static/jstatistics/user.jpg" style="align-content: right; justify-content: right;"
+          class="picture" />
+        <h1>30</h1>
+      </div>
+
+      <div class="content" style="border-bottom: 2px solid gainsboro;">
+        <h1>User2</h1>
+        <img src="../../static/jstatistics/user2.jpg" style="align-content: right; justify-content: right;"
+          class="pictureSmall" />
+        <h1>25</h1>
+      </div>
+
+      <div class="content">
+        <h1>User3</h1>
+        <img src="../../static/jstatistics/user3.jpg" style="align-content: right; justify-content: right;"
+          class="pictureSmall" />
+        <h1>13</h1>
+      </div>
+    </div>
+  </div>
+
+<!-- remove hardcoded styling -->
+  <div class="header" style="margin-top: 2.5%">
+    <h1>Most Knowledgeable Per Topic</h1>
+  </div>
+
+  <div class="container" style="margin-bottom: 1%; align-items: center; justify-content: center;">
+    <div class="verticalContainer">
+      <div class="containerHeader">
+        <h1>People & Culture <br><span style="color: goldenrod;">User</span><span style="color: gray">
+            (20 correct answers)</span></h1>
+      </div>
+
+      <div class="containerHeader">
+        <h1>History & Geography <br><span style="color: goldenrod;">User</span><span style="color: gray">
+            (20 correct answers)</span></h1>
+      </div>
+
+      <div class="containerHeader">
+        <h1>Literature <br><span style="color: goldenrod;">User</span><span style="color: gray">
+            (20 correct answers)</span></h1>
+      </div>
+    </div>
+    
+    <div class="verticalContainer">
+      <div class="containerHeader">
+        <h1>Art & Music <br><span style="color: goldenrod;">User</span><span style="color: gray">
+            (20 correct answers)</span></h1>
+      </div>
+
+      <div class="containerHeader">
+        <h1>Science <br><span style="color: goldenrod;">User</span><span style="color: gray">
+            (20 correct answers)</span></h1>
+      </div>
+
+      <div class="containerHeader">
+        <h1>Entertainment <br><span style="color: goldenrod;">User</span><span style="color: gray">
+            (20 correct answers)</span></h1>
+      </div>
+    </div>
+    
+    <div class="verticalContainer">      
+      <div class="containerHeader">
+        <h1>Sports <br><span style="color: goldenrod;">User</span><span style="color: gray">
+            (20 correct answers)</span></h1>
+      </div>
+
+      <div class="containerHeader">
+        <h1>Food <br><span style="color: goldenrod;">User</span><span style="color: gray">
+            (20 correct answers)</span></h1>
+      </div>
+
+      <div class="containerHeader">
+        <h1>Technology <br><span style="color: goldenrod;">User</span><span style="color: gray">
+            (20 correct answers)</span></h1>
+      </div>
+    </div>
+  </div>
+  
+  <div class="compare">
+    <div class="header">
+      <h1>Compare</h1>
+
+      <label for="users">Select a first contestant:</label>
+      <select name="users">
+        <option value="user">User</option>
+        <option value="user2">User 2</option>
+      </select>
+      <br>
+      <label for="users">Select a second contestant:</label>
+      <select name="users">
+        <option value="user">User</option>
+        <option value="user2">User 2</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="container" style="width: 66.6%; margin-left: auto; margin-right: auto;">
+    <div class="verticalContainer">
+      <div class="compareContainerHeader">
+        <div class="left">
+          <h1>User</h1>
+          <img src="../../static/jstatistics/user.jpeg" class="picture" />
+        </div>
+
+        <div class="right">
+          <h1>User2</h1>
+          <img src="../../static/jstatistics/user2.jpg" class="picture" />
+        </div>
+      </div>
+      <div class="radarContainer">
+        <canvas id="compareRadar" width="400" height="400"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="header" style="margin-top: 2.5%">
+    <h1>User Statistics</h1>
+
+    <label for="contestants">For contestant:</label>
+    <select name="contestants">
+      <option value="user">User</option>
+      <option value="user2">User2</option>
+    </select>
+  </div>
+
+  <div class="content" style="text-align: unset;">
+    <div class="container"
+      style="align-items: center; justify-content: center; display: block; margin-left: 5%; margin-right: 5%;">
+      <div class="containerHeader" style="margin-bottom: 10px;">
+        <h1>Last Played: <span style="color: goldenrod;">Season 1, Week 5</span><span style="color: gray">
+            (7/13/20)</span> Ending Value: <span style="color: green;">$3,200</span></h1>
+      </div>
+
+      <div class="containerHeader" style="margin-bottom: 10px;">
+        <h1>Games: <span style="color: goldenrod;">26</span><span style="color: gray"> (13 won)</span></h1>
+      </div>
+
+      <div class="containerHeader" style="margin-bottom: 10px;">
+        <h1>Favorite Topic: <span style="color: goldenrod;">History</span><span style="color: gray"> (27 correct
+            answers)</span></h1>
+      </div>
+
+      <div style="display: flex; justify-content: space-between;">
+        <div class="statisticsContainer">
+          <p class="statisticHeader">Winnings</p>
+          <p class="statistic">Total Winnings <span class="statisticValue">$32,000</span></p>
+          <p class="statistic">Consecutive Games Won <span class="statisticValue">12</span></p>
+          <p class="statistic">Highest Day Total <span class="statisticValue">$22,000</span></p>
+          <p class="statistic">Lowest Day Total <span class="statisticValue">$200</span></p>
+        </div>
+
+        <div class="statisticsContainer">
+          <p class="statisticHeader">Winnings Per Round</p>
+          <canvas id="donut" width="400" height="400"></canvas>
+        </div>
+
+        <div class="statisticsContainer">
+          <p class="statisticHeader">Categories Cleaned</p>
+          <p class="statistic">Categories Cleaned: <span class="statisticValue">24</span></p>
+          <p class="statistic">Double Jeopardy Categories Cleaned: <span class="statisticValue">24</span></p>
+          <p class="statistic">Total Categories Cleaned: <span class="statisticValue">48</span></p>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between;">
+        <div class="statisticsContainer">
+          <p class="statisticHeader">Jeopardy Winnings</p>
+          <p class="statistic">Questions Correct <span class="statisticValue">6</span></p>
+          <p class="statistic">Questions Wrong <span class="statisticValue">12</span></p>
+          <p class="statistic">Questions Attempted <span class="statisticValue">18</span></p>
+          <p class="statistic">Completion Rate <span class="statisticValue">50%</span></p>
+        </div>
+
+        <div class="statisticsContainer">
+          <p class="statisticHeader">Double Jeopardy Winnings</p>
+          <p class="statistic">Double Questions Correct <span class="statisticValue">6</span></p>
+          <p class="statistic">Double Questions Wrong <span class="statisticValue">12</span></p>
+          <p class="statistic">Double Questions Attempted <span class="statisticValue">18</span></p>
+          <p class="statistic">Completion Rate <span class="statisticValue">50%</span></p>
+        </div>
+
+        <div class="statisticsContainer">
+          <p class="statisticHeader">Final Jeopardy Winnings</p>
+          <p class="statistic">Lowest Wager <span class="statisticValue">$10</span></p>
+          <p class="statistic">Highest Wager <span class="statisticValue">$20,000</span></p>
+          <p class="statistic">Final Jeopardies Correct <span class="statisticValue">6</span></p>
+          <p class="statistic">Final Jeopardies Wrong <span class="statisticValue">12</span></p>
+          <p class="statistic">Final Jeopardies Attempted <span class="statisticValue">18</span></p>
+          <p class="statistic">Completion Rate <span class="statisticValue">50%</span></p>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between;">
+        <div class="statisticsContainer">
+          <p class="statisticHeader">Daily Double Winnings</p>
+          <p class="statistic">Total Daily Double Money Won <span class="statisticValue">$60,000</span></p>
+          <p class="statistic">Daily Doubles Correct <span class="statisticValue">6</span></p>
+          <p class="statistic">Daily Doubles Wrong <span class="statisticValue">12</span></p>
+          <p class="statistic">Daily Doubles Attempted <span class="statisticValue">18</span></p>
+          <p class="statistic">Completion Rate <span class="statisticValue">50%</span></p>
+        </div>
+
+        <div class="statisticsContainer">
+          <p class="statisticHeader">Overall Winnings</p>
+          <canvas id="myChart" width="400" height="400"></canvas>
+        </div>
+
+        <div class="statisticsContainer">
+          <p class="statisticHeader">Money Won</p>
+          <canvas id="line" width="400" height="400"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- get local chartjs and query utils -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+  <script src="http://192.168.1.11:8888/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="../../static/jstatistics/jstatistics.js"></script>
+  <script>
+    var compareRadarCtx = document.getElementById('compareRadar').getContext('2d');
+    var compareRadar = new Chart(compareRadarCtx, {
+      type: "radar",
+      data: {
+        labels: ["Test", "Test2", "Test3", "Test4", "Test5", "Test6", "Test7"],
+        datasets: [{
+          label: "User1",
+          data: [65, 59, 90, 81, 56, 55, 40],
+          fill: true,
+          backgroundColor: "rgba(255, 99, 132, 0.2)",
+          borderColor: "rgb(255, 99, 132)",
+          pointBackgroundColor: "rgb(255, 99, 132)",
+          pointBorderColor: "#fff",
+          pointHoverBackgroundColor: "#fff",
+          pointHoverBorderColor: "rgb(255, 99, 132)"
+        }, {
+          label: "User2",
+          data: [28, 48, 40, 19, 96, 27, 100],
+          fill: true,
+          backgroundColor: "rgba(54, 162, 235, 0.2)",
+          borderColor: "rgb(54, 162, 235)",
+          pointBackgroundColor: "rgb(54, 162, 235)",
+          pointBorderColor: "#fff",
+          pointHoverBackgroundColor: "#fff",
+          pointHoverBorderColor: "rgb(54, 162, 235)"
+        }]
+      },
+      options: {
+        elements: {
+          line: {
+            tension: 0,
+            borderWidth: 3
+          }
+        }
+      }
+    });
+
+    var donut = document.getElementById('donut').getContext('2d');
+    var myDoughnutChart = new Chart(donut, {
+      type: 'doughnut',
+      data: {
+        datasets: [{
+          data: [10, 20, 30],
+        }],
+        labels: [
+          'Jeopardy',
+          'Double Jeopardy',
+          'Final Jeopardy'
+        ]
+      }
+    });
+    var linectx = document.getElementById('line').getContext('2d');
+    var line = new Chart(linectx, {
+      type: 'line',
+      data: {
+        datasets: [{
+          label: 'First dataset',
+          data: [0, 20, 40, 50]
+        }],
+        labels: ['January', 'February', 'March', 'April']
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              suggestedMin: 50,
+              suggestedMax: 100
+            }
+          }]
+        }
+      }
+    });
+
+    var chart = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(chart, {
+      type: 'bar',
+      data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+          label: '# of Votes',
+          data: [12, 19, 3, 5, 2, 3],
+          backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+            'rgba(153, 102, 255, 0.2)',
+            'rgba(255, 159, 64, 0.2)'
+          ],
+          borderColor: [
+            'rgba(255, 99, 132, 1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(153, 102, 255, 1)',
+            'rgba(255, 159, 64, 1)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Jeopardy Buzzer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{% static 'buzzer/buzzer.css' %}">
+</head>
+
+<body>
+  <div id="login">
+    <div id="loginContent">
+      <h1 id="greeting">This..is..<br> Jeopardy!</h1>
+      <form id="userform">
+        <input type="text" placeholder="Name" value="" id="user">
+        <button id="join">Join</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="mainScreen">
+    <button id="buzzer" type="button">Buzz in!</button>
+    <ul id="messages"></ul>
+    <h1 id="score">Score: $<span id="socketScore">0</span></h1>
+  </div>
+
+  <div id="wager">
+    <form id="wagerForm">
+      <input type="number" placeholder="Wager" value="" id="wage">
+      <button id="submitwager">Submit</button>
+    </form>
+  </div>
+
+  <div id="finalJeopardy">
+    <form id="finalForm">
+      <input type="text" placeholder="Answer" value="" id="final">
+      <button id="submitfinal">Submit</button>
+    </form>
+  </div>
+
+  <div id="recap">
+    <h1>You wagered $<span id="recapWager"></span></h1>
+    <h1>You answered: <span id="recapAnswer"></span></h1>
+  </div>
+  <script src="http://192.168.1.7:8888/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="{% static 'buzzer/buzzer.js' %}"></script>
+</body>
+
+</html>

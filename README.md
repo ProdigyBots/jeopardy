@@ -18,6 +18,12 @@ The main feature of this application is the [Django](https://www.djangoproject.c
 
 ## Running The Application
 
+```
+docker build -t jeopardy .
+docker run -dp 8000:8000 --rm jeopardy
+docker run -dp 8000:8000 jeopardy
+```
+
 **Website**
 While in the `/client/jeopardy/` directory, simply run the Django command `python3 manage.py runserver`, substituting `python` for whatever your OS normally uses.
 

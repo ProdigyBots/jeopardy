@@ -9,7 +9,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost:8000']
+ALLOWED_HOSTS = ['*']
 
 CSRF_COOKIE_SECURE = True
 

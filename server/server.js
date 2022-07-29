@@ -6,7 +6,7 @@ app = express(),
 server = http.createServer(app),
 io = socketio(server),
 SERVER_PORT = 8888, 
-SERVER_IP = '192.168.1.3'; // TODO make this an enviroment variable or specified via dockerfile
+SERVER_IP = '192.168.1.11'; // TODO make this an enviroment variable or specified via dockerfile
 // make clients interact with that same variable, we don't want an absolute path
 
 let onlineClients = new Set();

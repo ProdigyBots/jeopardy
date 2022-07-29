@@ -3,19 +3,29 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
+# production settings
+# DEBUG=False
+
+# CSRF_COOKIE_SECURE = True
+
+# SESSION_COOKIE_SECURE = True
+
+# SECURE_SSL_REDIRECT = True
+
+# development settings
+DEBUG=True
+
+CSRF_COOKIE_SECURE = False
+
+SESSION_COOKIE_SECURE = False
+
+SECURE_SSL_REDIRECT = False
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = os.getenv("SECRET_KEY")
 
-DEBUG = False
-
 ALLOWED_HOSTS = ['*']
-
-CSRF_COOKIE_SECURE = True
-
-SESSION_COOKIE_SECURE = True
-
-SECURE_SSL_REDIRECT = True
 
 INSTALLED_APPS = [
     'core.apps.CoreConfig',

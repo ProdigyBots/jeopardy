@@ -11,11 +11,12 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
-CSRF_COOKIE_SECURE = True
+# TODO these three settings below are True during production
+CSRF_COOKIE_SECURE = False
 
-SESSION_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = False
 
-SECURE_SSL_REDIRECT = True
+SECURE_SSL_REDIRECT = False
 
 INSTALLED_APPS = [
     'core.apps.CoreConfig',

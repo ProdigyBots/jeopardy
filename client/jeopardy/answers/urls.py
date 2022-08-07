@@ -26,8 +26,8 @@ SPREADSHEET_ID = os.getenv("SPREADSHEET_ID")
 # Spreadsheet Range
 CATEGORIES = ['A2', 'A8', 'A14', 'A20', 'A26', 'A32']
 ANSWERS = ['B3:B7', 'B9:B13', 'B15:B19', 'B21:B25', 'B27:B31', 'B33:B37']
-DOUBLE_CATEGORIES = ['A39', 'A45', 'A51', 'A57', 'A63', 'A69']
-DOUBLE_ANSWERS = ['B40:B44', 'B46:B50', 'B52:B56', 'B58:B62', 'B64:B68', 'B70:B74']
+DOUBLE_CATEGORIES = ['A40', 'A46', 'A52', 'A58', 'A64', 'A70']
+DOUBLE_ANSWERS = ['B41:B45', 'B47:B51', 'B53:B57', 'B59:B63', 'B65:B69', 'B71:B75']
 
 def import_spreadsheet():
     """
